@@ -1,0 +1,10 @@
+D:\G\ming_zlg_gui\ming_cs_zlggui\Ming_LCD\bin\Release\Ming_LCD.exe.config
+D:\G\ming_zlg_gui\ming_cs_zlggui\Ming_LCD\bin\Release\Ming_LCD.exe
+D:\G\ming_zlg_gui\ming_cs_zlggui\Ming_LCD\bin\Release\Ming_LCD.pdb
+D:\G\ming_zlg_gui\ming_cs_zlggui\Ming_LCD\obj\Release\Ming_LCD.Form1.resources
+D:\G\ming_zlg_gui\ming_cs_zlggui\Ming_LCD\obj\Release\Ming_LCD.Properties.Resources.resources
+D:\G\ming_zlg_gui\ming_cs_zlggui\Ming_LCD\obj\Release\Ming_LCD.csproj.GenerateResource.cache
+D:\G\ming_zlg_gui\ming_cs_zlggui\Ming_LCD\obj\Release\Ming_LCD.csproj.CoreCompileInputs.cache
+D:\G\ming_zlg_gui\ming_cs_zlggui\Ming_LCD\obj\Release\Ming_LCD.exe
+D:\G\ming_zlg_gui\ming_cs_zlggui\Ming_LCD\obj\Release\Ming_LCD.pdb
+D:\G\ming_zlg_gui\ming_cs_zlggui\Ming_LCD\obj\Release\Ming_LCD.csprojAssemblyReference.cache

@@ -1,0 +1,15 @@
+".\output\ConvertColor.obj",
+".\output\delay.obj",
+".\output\font5_7.obj",
+".\output\FONT8_8.obj",
+".\output\FONT24_32.obj",
+".\output\GUI_BASIC.obj",
+".\output\GUI_StockC.obj",
+".\output\lcmdrv.obj",
+".\output\loadbit.obj",
+".\output\main.obj",
+".\output\menu.obj",
+".\output\spline.obj",
+".\output\windows.obj" 
+TO ".\output\GUI" 
+PRINT(".\output\GUI.m51") RAMSIZE(256) 

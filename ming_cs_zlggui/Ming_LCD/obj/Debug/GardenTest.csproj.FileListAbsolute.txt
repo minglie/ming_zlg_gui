@@ -1,0 +1,13 @@
+J:\项目资料\YAT-项目资料\PROTECTIVE\Gardena Battery\test\my_test\GardenTest\GardenTest\obj\Debug\GardenTest.csprojResolveAssemblyReference.cache
+J:\项目资料\YAT-项目资料\PROTECTIVE\Gardena Battery\test\my_test\GardenTest\GardenTest\obj\Debug\cellpro.Form1.resources
+J:\项目资料\YAT-项目资料\PROTECTIVE\Gardena Battery\test\my_test\GardenTest\GardenTest\obj\Debug\cellpro.Properties.Resources.resources
+J:\项目资料\YAT-项目资料\PROTECTIVE\Gardena Battery\test\my_test\GardenTest\GardenTest\obj\Debug\GardenTest.csproj.GenerateResource.Cache
+J:\项目资料\YAT-项目资料\PROTECTIVE\Gardena Battery\test\my_test\GardenTest\GardenTest\bin\Debug\IrisSkin2.dll
+J:\项目资料\YAT-项目资料\PROTECTIVE\Gardena Battery\test\my_test\GardenTest\GardenTest\bin\Debug\DevComponents.Instrumentation.dll
+J:\项目资料\YAT-项目资料\PROTECTIVE\Gardena Battery\test\my_test\GardenTest\GardenTest\bin\Debug\DevComponents.DotNetBar2.dll
+J:\项目资料\YAT-项目资料\PROTECTIVE\Gardena Battery\test\my_test\GardenTest\GardenTest\bin\Debug\DevComponents.DotNetBar2.xml
+J:\项目资料\YAT-项目资料\PROTECTIVE\Gardena Battery\test\my_test\GardenTest\GardenTest\bin\Debug\GardenTest.exe.config
+J:\项目资料\YAT-项目资料\PROTECTIVE\Gardena Battery\test\my_test\GardenTest\GardenTest\bin\Debug\GardenTest.exe
+J:\项目资料\YAT-项目资料\PROTECTIVE\Gardena Battery\test\my_test\GardenTest\GardenTest\bin\Debug\GardenTest.pdb
+J:\项目资料\YAT-项目资料\PROTECTIVE\Gardena Battery\test\my_test\GardenTest\GardenTest\obj\Debug\GardenTest.exe
+J:\项目资料\YAT-项目资料\PROTECTIVE\Gardena Battery\test\my_test\GardenTest\GardenTest\obj\Debug\GardenTest.pdb

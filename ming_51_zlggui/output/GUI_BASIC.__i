@@ -1,0 +1,1 @@
+"src\GUI_BASIC.C" LARGE BROWSE INCDIR(.\head;.\src) DEBUG OBJECTEXTEND PRINT(.\output\GUI_BASIC.lst) TABS (2) OBJECT(.\output\GUI_BASIC.obj)

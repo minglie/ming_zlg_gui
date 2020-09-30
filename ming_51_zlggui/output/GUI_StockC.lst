@@ -1,0 +1,102 @@
+C51 COMPILER V9.52.0.0   GUI_STOCKC                                                        01/01/2020 23:07:05 PAGE 1   
+
+
+C51 COMPILER V9.52.0.0, COMPILATION OF MODULE GUI_STOCKC
+OBJECT MODULE PLACED IN .\output\GUI_StockC.obj
+COMPILER INVOKED BY: D:\Program Files\keil\C51\BIN\C51.EXE src\GUI_StockC.C LARGE BROWSE INCDIR(.\head;.\src) DEBUG OBJE
+                    -CTEXTEND PRINT(.\output\GUI_StockC.lst) TABS(2) OBJECT(.\output\GUI_StockC.obj)
+
+line level    source
+
+   1          /****************************************************************************************
+   2          * 文件名：GUI_STOCKC.C
+   3          * 功能：设置前景色及背景色变量，用于ASCII码、汉字、窗口、单色位图显示。
+   4          * 作者：黄绍斌
+   5          * 日期：2004.02.28
+   6          * 备注：
+   7          ****************************************************************************************/
+   8          #include  "config.h"
+   9          
+  10          #if  (GUI_WINDOW_EN==1)|(GUI_MenuIco_EN==1)|(GUI_MenuDown_EN==1)|(GUI_LoadPic_EN==1)|(GUI_PutHZ_EN==1)|(FO
+             -NT5x7_EN==1)|(FONT8x8_EN==1)|(FONT24x32_EN==1)
+  11          
+  12          /* 定义十进制(0-7)==>十六进制位转换表，由于显示点数据是由左到右，所以十六进制位顺序是倒的 */
+  13          uint8 const  DCB2HEX_TAB[8] = {0x80, 0x40, 0x20, 0x10, 0x08, 0x04, 0x02, 0x01};
+  14          
+  15          
+  16          /* 定义前景色及背景色变量，用于ASCII码、汉字、窗口、单色位图显示 */
+  17          TCOLOR  disp_color;
+  18          TCOLOR  back_color;
+  19          
+  20          /****************************************************************************
+  21          * 名称：GUI_SetColor()
+  22          * 功能：设置显示色及背景色。用于ASCII字符显示及汉字显示。
+  23          * 入口参数：color1  显示色的值
+  24          *          color2 背景色的值
+  25          * 出口参数：无
+  26          * 说明：
+  27          ****************************************************************************/
+  28          void  GUI_SetColor(TCOLOR color1, TCOLOR color2)
+  29          {  
+  30   1        GUI_CopyColor(&disp_color, color1);
+  31   1          GUI_CopyColor(&back_color, color2);  
+  32   1      }
+  33          
+  34          
+  35          /****************************************************************************
+  36          * 名称：GUI_GetBackColor()
+  37          * 功能：最得当前背景色。
+  38          * 入口参数：bakc    保存颜色的变量地址
+  39          * 出口参数：无
+  40          * 说明：
+  41          ****************************************************************************/
+  42          /*void  GUI_GetBackColor(TCOLOR  *bakc)
+  43          {  
+  44            GUI_CopyColor(bakc, back_color);  
+  45          }
+  46          
+  47          
+  48          /****************************************************************************
+  49          * 名称：GUI_GetDispColor()
+  50          * 功能：最得当前前景色。
+  51          * 入口参数：bakc    保存颜色的变量地址
+  52          * 出口参数：无
+  53          * 说明：
+C51 COMPILER V9.52.0.0   GUI_STOCKC                                                        01/01/2020 23:07:05 PAGE 2   
+
+  54          ****************************************************************************/
+  55          /*void  GUI_GetDispColor(TCOLOR  *bakc)
+  56          {  GUI_CopyColor(bakc, disp_color);  
+  57          }
+  58          
+  59          
+  60          /****************************************************************************
+  61          * 名称：GUI_ExchangeColor()
+  62          * 功能：交换前景色与背景色。用于反相显示。
+  63          * 入口参数：无
+  64          * 出口参数：无
+  65          * 说明：
+  66          ****************************************************************************/
+  67          /*void  GUI_ExchangeColor(void)
+  68          {  TCOLOR  bakc;
+  69          
+  70             GUI_CopyColor(&bakc, disp_color);
+  71             GUI_CopyColor(&disp_color, back_color);
+  72             GUI_CopyColor(&back_color, bakc);
+  73          }  */
+  74          
+  75          #endif
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     15    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =     10    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

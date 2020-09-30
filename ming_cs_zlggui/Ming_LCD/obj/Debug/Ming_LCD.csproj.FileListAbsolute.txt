@@ -1,0 +1,94 @@
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\Ming_LCD\Ming_LCD\obj\Debug\Ming_LCD.csprojResolveAssemblyReference.cache
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\Ming_LCD\Ming_LCD\obj\Debug\Ming_LCD.csproj.GenerateResource.Cache
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\Ming_LCD\Ming_LCD\bin\Debug\Ming_LCD.exe.config
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\Ming_LCD\Ming_LCD\bin\Debug\Ming_LCD.exe
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\Ming_LCD\Ming_LCD\bin\Debug\Ming_LCD.pdb
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\Ming_LCD\Ming_LCD\obj\Debug\Ming_LCD.Form1.resources
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\Ming_LCD\Ming_LCD\obj\Debug\Ming_LCD.Properties.Resources.resources
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\Ming_LCD\Ming_LCD\obj\Debug\Ming_LCD.exe
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\Ming_LCD\Ming_LCD\obj\Debug\Ming_LCD.pdb
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\2\Ming_LCD\Ming_LCD\bin\Debug\Ming_LCD.exe.config
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\2\Ming_LCD\Ming_LCD\obj\Debug\Ming_LCD.exe
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\2\Ming_LCD\Ming_LCD\obj\Debug\Ming_LCD.pdb
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\2\Ming_LCD\Ming_LCD\bin\Debug\Ming_LCD.exe
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\2\Ming_LCD\Ming_LCD\bin\Debug\Ming_LCD.pdb
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\2\Ming_LCD\Ming_LCD\obj\Debug\Ming_LCD.csprojResolveAssemblyReference.cache
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\2\Ming_LCD\Ming_LCD\obj\Debug\Ming_LCD.Form1.resources
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\2\Ming_LCD\Ming_LCD\obj\Debug\Ming_LCD.Properties.Resources.resources
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\2\Ming_LCD\Ming_LCD\obj\Debug\Ming_LCD.csproj.GenerateResource.Cache
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\3\Ming_LCD\Ming_LCD\bin\Debug\Ming_LCD.exe.config
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\3\Ming_LCD\Ming_LCD\obj\Debug\Ming_LCD.exe
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\3\Ming_LCD\Ming_LCD\obj\Debug\Ming_LCD.pdb
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\3\Ming_LCD\Ming_LCD\bin\Debug\Ming_LCD.exe
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\3\Ming_LCD\Ming_LCD\bin\Debug\Ming_LCD.pdb
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\3\Ming_LCD\Ming_LCD\bin\Debug\DevComponents.DotNetBar2.dll
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\3\Ming_LCD\Ming_LCD\bin\Debug\DevComponents.DotNetBar2.xml
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\3\Ming_LCD\Ming_LCD\obj\Debug\Ming_LCD.csprojResolveAssemblyReference.cache
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\3\Ming_LCD\Ming_LCD\obj\Debug\Ming_LCD.Form1.resources
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\3\Ming_LCD\Ming_LCD\obj\Debug\Ming_LCD.Properties.Resources.resources
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\3\Ming_LCD\Ming_LCD\obj\Debug\Ming_LCD.csproj.GenerateResource.Cache
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\4\Ming_LCD\Ming_LCD\bin\Debug\Ming_LCD.exe.config
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\4\Ming_LCD\Ming_LCD\obj\Debug\Ming_LCD.exe
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\4\Ming_LCD\Ming_LCD\obj\Debug\Ming_LCD.pdb
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\4\Ming_LCD\Ming_LCD\bin\Debug\Ming_LCD.exe
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\4\Ming_LCD\Ming_LCD\bin\Debug\Ming_LCD.pdb
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\4\Ming_LCD\Ming_LCD\bin\Debug\DevComponents.DotNetBar2.dll
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\4\Ming_LCD\Ming_LCD\bin\Debug\DevComponents.DotNetBar2.xml
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\4\Ming_LCD\Ming_LCD\obj\Debug\Ming_LCD.csprojResolveAssemblyReference.cache
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\4\Ming_LCD\Ming_LCD\obj\Debug\Ming_LCD.Form1.resources
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\4\Ming_LCD\Ming_LCD\obj\Debug\Ming_LCD.Properties.Resources.resources
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\4\Ming_LCD\Ming_LCD\obj\Debug\Ming_LCD.csproj.GenerateResource.Cache
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\5\Ming_LCD\Ming_LCD\bin\Debug\Ming_LCD.exe.config
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\5\Ming_LCD\Ming_LCD\obj\Debug\Ming_LCD.exe
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\5\Ming_LCD\Ming_LCD\obj\Debug\Ming_LCD.pdb
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\5\Ming_LCD\Ming_LCD\bin\Debug\Ming_LCD.exe
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\5\Ming_LCD\Ming_LCD\bin\Debug\Ming_LCD.pdb
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\5\Ming_LCD\Ming_LCD\bin\Debug\DevComponents.DotNetBar2.dll
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\5\Ming_LCD\Ming_LCD\bin\Debug\DevComponents.DotNetBar2.xml
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\5\Ming_LCD\Ming_LCD\obj\Debug\Ming_LCD.csprojResolveAssemblyReference.cache
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\5\Ming_LCD\Ming_LCD\obj\Debug\Ming_LCD.Form1.resources
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\5\Ming_LCD\Ming_LCD\obj\Debug\Ming_LCD.Properties.Resources.resources
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\5\Ming_LCD\Ming_LCD\obj\Debug\Ming_LCD.csproj.GenerateResource.Cache
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\6\Ming_LCD\Ming_LCD\bin\Debug\Ming_LCD.exe.config
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\6\Ming_LCD\Ming_LCD\obj\Debug\Ming_LCD.exe
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\6\Ming_LCD\Ming_LCD\obj\Debug\Ming_LCD.pdb
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\7\Ming_LCD\Ming_LCD\bin\Debug\Ming_LCD.exe.config
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\7\Ming_LCD\Ming_LCD\bin\Debug\Ming_LCD.exe
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\7\Ming_LCD\Ming_LCD\bin\Debug\Ming_LCD.pdb
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\7\Ming_LCD\Ming_LCD\bin\Debug\DevComponents.DotNetBar2.dll
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\7\Ming_LCD\Ming_LCD\bin\Debug\DevComponents.DotNetBar2.xml
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\7\Ming_LCD\Ming_LCD\obj\Debug\Ming_LCD.csprojResolveAssemblyReference.cache
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\7\Ming_LCD\Ming_LCD\obj\Debug\Ming_LCD.Form1.resources
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\7\Ming_LCD\Ming_LCD\obj\Debug\Ming_LCD.Properties.Resources.resources
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\7\Ming_LCD\Ming_LCD\obj\Debug\Ming_LCD.csproj.GenerateResource.Cache
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\7\Ming_LCD\Ming_LCD\obj\Debug\Ming_LCD.exe
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\7\Ming_LCD\Ming_LCD\obj\Debug\Ming_LCD.pdb
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\Ming_LCD - 副本\Ming_LCD\bin\Debug\Ming_LCD.exe.config
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\Ming_LCD - 副本\Ming_LCD\obj\Debug\Ming_LCD.exe
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\Ming_LCD - 副本\Ming_LCD\obj\Debug\Ming_LCD.pdb
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\Ming_LCD - 副本\Ming_LCD\bin\Debug\Ming_LCD.exe
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\Ming_LCD - 副本\Ming_LCD\bin\Debug\Ming_LCD.pdb
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\Ming_LCD - 副本\Ming_LCD\obj\Debug\Ming_LCD.csprojResolveAssemblyReference.cache
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\Ming_LCD - 副本\Ming_LCD\obj\Debug\Ming_LCD.Form1.resources
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\Ming_LCD - 副本\Ming_LCD\obj\Debug\Ming_LCD.Properties.Resources.resources
+J:\项目资料\YAT-项目资料\智能割草机菜单\LCD模拟器\Ming_LCD - 副本\Ming_LCD\obj\Debug\Ming_LCD.csproj.GenerateResource.Cache
+J:\Ming_LCD - 加速刷屏\Ming_LCD\bin\Debug\Ming_LCD.exe.config
+J:\Ming_LCD - 加速刷屏\Ming_LCD\bin\Debug\Ming_LCD.exe
+J:\Ming_LCD - 加速刷屏\Ming_LCD\bin\Debug\Ming_LCD.pdb
+J:\Ming_LCD - 加速刷屏\Ming_LCD\obj\Debug\Ming_LCD.csprojAssemblyReference.cache
+J:\Ming_LCD - 加速刷屏\Ming_LCD\obj\Debug\Ming_LCD.Form1.resources
+J:\Ming_LCD - 加速刷屏\Ming_LCD\obj\Debug\Ming_LCD.Properties.Resources.resources
+J:\Ming_LCD - 加速刷屏\Ming_LCD\obj\Debug\Ming_LCD.csproj.GenerateResource.cache
+J:\Ming_LCD - 加速刷屏\Ming_LCD\obj\Debug\Ming_LCD.csproj.CoreCompileInputs.cache
+J:\Ming_LCD - 加速刷屏\Ming_LCD\obj\Debug\Ming_LCD.exe
+J:\Ming_LCD - 加速刷屏\Ming_LCD\obj\Debug\Ming_LCD.pdb
+D:\G\ming_zlg_gui\ming_cs_zlggui\Ming_LCD\bin\Debug\Ming_LCD.exe.config
+D:\G\ming_zlg_gui\ming_cs_zlggui\Ming_LCD\bin\Debug\Ming_LCD.exe
+D:\G\ming_zlg_gui\ming_cs_zlggui\Ming_LCD\bin\Debug\Ming_LCD.pdb
+D:\G\ming_zlg_gui\ming_cs_zlggui\Ming_LCD\obj\Debug\Ming_LCD.csprojAssemblyReference.cache
+D:\G\ming_zlg_gui\ming_cs_zlggui\Ming_LCD\obj\Debug\Ming_LCD.Form1.resources
+D:\G\ming_zlg_gui\ming_cs_zlggui\Ming_LCD\obj\Debug\Ming_LCD.Properties.Resources.resources
+D:\G\ming_zlg_gui\ming_cs_zlggui\Ming_LCD\obj\Debug\Ming_LCD.csproj.GenerateResource.cache
+D:\G\ming_zlg_gui\ming_cs_zlggui\Ming_LCD\obj\Debug\Ming_LCD.csproj.CoreCompileInputs.cache
+D:\G\ming_zlg_gui\ming_cs_zlggui\Ming_LCD\obj\Debug\Ming_LCD.exe
+D:\G\ming_zlg_gui\ming_cs_zlggui\Ming_LCD\obj\Debug\Ming_LCD.pdb

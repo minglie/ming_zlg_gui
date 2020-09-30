@@ -1,0 +1,158 @@
+C51 COMPILER V9.52.0.0   LOADBIT                                                           01/01/2020 23:07:05 PAGE 1   
+
+
+C51 COMPILER V9.52.0.0, COMPILATION OF MODULE LOADBIT
+OBJECT MODULE PLACED IN .\output\loadbit.obj
+COMPILER INVOKED BY: D:\Program Files\keil\C51\BIN\C51.EXE src\loadbit.c LARGE BROWSE INCDIR(.\head;.\src) DEBUG OBJECTE
+                    -XTEND PRINT(.\output\loadbit.lst) TABS(2) OBJECT(.\output\loadbit.obj)
+
+line level    source
+
+   1          /****************************************************************************************
+   2          * 文件名：LOADBIT.C
+   3          * 功能：显示单色图形及汉字显示。先将图形转换为对应的点阵数组，然后即可调用此文件的函数输出驱动。
+   4          * 作者：黄绍斌
+   5          * 日期：2004.02.26
+   6          * 备注：使用GUI_SetBackColor()函数设置显示颜色及背景色。
+   7          ****************************************************************************************/
+   8          #include  "config.h"
+   9          
+  10          #if  (GUI_LoadPic_EN==1)|(GUI_MenuIco_EN==1)|(GUI_PutHZ_EN==1)
+  11          /****************************************************************************
+  12          * 名称：GUI_LoadLine()
+  13          * 功能：输出单色图形的一行数据。
+  14          * 入口参数： x    指定显示位置，x坐标
+  15          *           y   指定显示位置，y坐标
+  16          *           dat   要输出显示的数据。
+  17          *           no      要显示此行的点个数
+  18          * 出口参数：返回值为1时表示操作成功，为0时表示操作失败。
+  19          * 说明：操作失败原因是指定地址超出有效范围。
+  20          ****************************************************************************/
+  21          uint8  GUI_LoadLine(uint32 x, uint32 y, uint8 *dat, uint32 no)
+  22          {  uint8   bit_dat;
+  23   1         uint8   i;
+  24   1         TCOLOR  bakc;
+  25   1      
+  26   1         /* 参数过滤 */
+  27   1         if(x>=GUI_LCM_XMAX) return(0);
+  28   1         if(y>=GUI_LCM_YMAX) return(0);
+  29   1         
+  30   1         for(i=0; i<no; i++)
+  31   1         {    /* 判断是否要读取点阵数据 */
+  32   2            if( (i%8)==0 ) bit_dat = *dat++;
+  33   2           
+  34   2              /* 设置相应的点为color或为back_color */
+  35   2              if( (bit_dat&DCB2HEX_TAB[i&0x07])==0 )
+  36   2                GUI_CopyColor(&bakc, back_color); 
+  37   2              else  
+  38   2                GUI_CopyColor(&bakc, disp_color);
+  39   2              GUI_Point(x, y, bakc);       
+  40   2           
+  41   2            if( (++x)>=GUI_LCM_XMAX ) return(0);
+  42   2         }
+  43   1         
+  44   1         return(1);
+  45   1      }
+  46          #endif
+  47          
+  48          
+  49          #if  (GUI_LoadPic_EN==1)|(GUI_MenuIco_EN==1)
+              /****************************************************************************
+              * 名称：GUI_LoadPic()
+              * 功能：输出单色图形数据。
+              * 入口参数： x    指定显示位置，x坐标
+              *           y   指定显示位置，y坐标
+C51 COMPILER V9.52.0.0   LOADBIT                                                           01/01/2020 23:07:05 PAGE 2   
+
+              *           dat   要输出显示的数据
+              *           hno     要显示此行的点个数
+              *           lno     要显示此列的点个数
+              * 出口参数：无
+              * 说明：操作失败原因是指定地址超出有效范围。
+              ****************************************************************************/
+              void  GUI_LoadPic(uint32 x, uint32 y, uint8 *dat, uint32 hno, uint32 lno)
+              {  uint32  i;
+              
+                 for(i=0; i<lno; i++)
+                 {  GUI_LoadLine(x, y, dat, hno);       // 输出一行数据
+                    y++;                    // 显示下一行
+                    dat += (hno>>3);              // 计算下一行的数据
+                    if( (hno&0x07)!=0 ) dat++;
+                 }
+              }
+              
+              
+              
+              
+              /****************************************************************************
+              * 名称：GUI_LoadPic1()
+              * 功能：输出单色图形数据，反相显示。
+              * 入口参数： x    指定显示位置，x坐标
+              *           y   指定显示位置，y坐标
+              *           dat   要输出显示的数据。
+              *           hno     要显示此行的点个数
+              *           lno     要显示此列的点个数
+              * 出口参数：无
+              * 说明：操作失败原因是指定地址超出有效范围。
+              ****************************************************************************/
+              void  GUI_LoadPic1(uint32 x, uint32 y, uint8 *dat, uint32 hno, uint32 lno)
+              {  uint32  i;
+                 
+                 GUI_ExchangeColor();                 // 显示色与背景色交换
+                 for(i=0; i<lno; i++)
+                 {  GUI_LoadLine(x, y, dat, hno);           // 输出一行数据
+                    y++;                        // 显示下一行
+                    dat += (hno>>3);                  // 计算下一行的数据
+                    if( (hno&0x07)!=0 ) dat++;
+                 }
+                 GUI_ExchangeColor();
+                 
+              }
+              #endif
+ 100          
+ 101          
+ 102          #if  GUI_PutHZ_EN==1
+ 103          /****************************************************************************
+ 104          * 名称：GUI_PutHZ()
+ 105          * 功能：显示汉字。
+ 106          * 入口参数： x    指定显示位置，x坐标
+ 107          *           y   指定显示位置，y坐标
+ 108          *           dat   要输出显示的汉字点阵数据。
+ 109          *           hno     要显示此行的点个数
+ 110          *           lno     要显示此列的点个数
+ 111          * 出口参数：无
+ 112          * 说明：操作失败原因是指定地址超出有效范围。
+ 113          ****************************************************************************/
+ 114          void  GUI_PutHZ(uint32 x, uint32 y, uint8 *dat, uint8 hno, uint8 lno)
+ 115          {  uint8  i;
+ 116   1      
+C51 COMPILER V9.52.0.0   LOADBIT                                                           01/01/2020 23:07:05 PAGE 3   
+
+ 117   1         for(i=0; i<lno; i++)
+ 118   1         {  GUI_LoadLine(x, y, dat, hno);           // 输出一行数据
+ 119   2            y++;                        // 显示下一行
+ 120   2            dat += (hno>>3);                  // 计算下一行的数据
+ 121   2            if( (hno&0x07)!=0 ) dat++;
+ 122   2         }
+ 123   1      }
+ 124          #endif
+ 125          
+ 126          
+ 127          
+ 128          
+ 129          
+ 130          
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    332    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----      22
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

@@ -1,0 +1,1 @@
+"src\font5_7.c" LARGE BROWSE INCDIR(.\head;.\src) DEBUG OBJECTEXTEND PRINT(.\output\font5_7.lst) TABS (2) OBJECT(.\output\font5_7.obj)
