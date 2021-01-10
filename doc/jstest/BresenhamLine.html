@@ -116,7 +116,7 @@ function DrawLine(oPad,x0,y0,x1,y1){
     let sx = x0<x1 ? 1 : -1;
     let dy = Math.abs(y1-y0);
     let sy = y0<y1 ? 1 : -1; 
-    let err = (dx>dy ? dx : -dy)/2
+    let err =0// (dx>dy ? dx : -dy)/2
     let e2;
    // console.log("dx="+dx,"dy="+dy);
     while(1){

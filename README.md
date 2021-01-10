@@ -12,8 +12,12 @@ https://github.com/minglie/ming_zlg_gui/tree/master/doc/
 https://github.com/minglie/ming_zlg_gui/tree/master/doc/badapple
 
 # 直线算法
-参考的播客,不过文中的解释是乱写的
+参考的播客
 https://blog.csdn.net/cjw_soledad/article/details/78886117
+
+不过文中的解释不太好,正确的理解应为,每一小段有连续(dx/dy)个横格,这一小段横格,横轴长度为dx/dy,纵轴长度为1(最上与最下之差),这一
+小段矩形对角线横纵比值是dx/dy,每一小段横纵比是dx/dy,那么直线整体横纵比自然也是(dx/dy),
+err的初始值取err = (dx>dy ? dx : -dy)/2 只是为了中庸一些,取0也是可以的
 
 ## 直线算法测试
 https://github.com/minglie/ming_zlg_gui/tree/master/doc/jstest
