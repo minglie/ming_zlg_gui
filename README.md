@@ -44,6 +44,6 @@ dx/dy=10,err初始值为20
 dx/dy=3.07,err初始值为20
 ![环境变量示例代码](doc/docimg/err20.png)
 
-## 直线场景2
+## 直线场景3
 dx/dy=1,err初始值为20
 ![环境变量示例代码](doc/docimg/err1.png)
