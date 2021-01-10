@@ -12,6 +12,8 @@ using System.Text.RegularExpressions;
 using System.IO;
 using System.Threading;
 using System.Diagnostics;
+using static Ming_LCD.JsonHelper;
+using Newtonsoft.Json;
 
 namespace Ming_LCD
 {
@@ -701,8 +703,8 @@ namespace Ming_LCD
 
            // YAT_lawn_hmi.Draw_meinv();
 
-           YAT_lawn_hmi.Draw_zxc();
-
+         //  YAT_lawn_hmi.Draw_zxc();
+           // ZLG_GUI.GUI_LoadPic(0, 0, YAT_lawn_pic.pic_bad_app1_240_160, 240, 160);
 
             //WINDOWS Win_Main = new WINDOWS( 0, 0, 160, 160, "ZLG_GUI", "Programme by CuiChao" );
             //ZLG_GUI.GUI_WindowsDraw(ref Win_Main);
@@ -713,6 +715,7 @@ namespace Ming_LCD
             //  ZLG_GUI.GUI_Button_Cancle(101, 100);
             //  MENUICO menuico = new MENUICO(100, 100, ZLG_GUI.ICO1, ZLG_GUI.Title_ICO1, 1,null);
             //  ZLG_GUI.GUI_MenuIcoDraw(ref menuico);
+
         }
 
     private void lb_LCD_MouseMove(object sender, MouseEventArgs e)
@@ -727,7 +730,7 @@ namespace Ming_LCD
 
         private void button3_Click(object sender, EventArgs e)
         {
-             ZLG_GUI.GUI_PutString8_8(40, 0, "1234566etisuetioe0");
+             ZLG_GUI.GUI_PutString8_8(40, 0, "热烈");
 
             ZLG_GUI.GUI_PutString8_16(20, 40,"Wellcome");
             //  ZLG_GUI.GUI_Rectangle(10, 10, 50, 50, true);
@@ -770,6 +773,75 @@ namespace Ming_LCD
         private void Lb_LCD_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            String  url=   this.textBox1.Text;
+            String pic_size=  textBox2.Text;
+            int w = 240;
+            int h = 160;
+            if (!"".Equals(pic_size) ) {
+                String[] list = pic_size.Split(',');
+                w= int.Parse(list[0]);
+                h = int.Parse(list[1]);
+            }
+
+
+            string res = HttpUtil.GetRequest(url, 6000);
+            byte[] a = JsonConvert.DeserializeObject<Byte[]>(res);
+            ZLG_GUI.GUI_LoadPic(0, 0,a, w, h);
+        }
+
+        private void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button5_Click(object sender, EventArgs e)
+        {
+            byte[][] molist= new byte[][] {
+                   YAT_lawn_pic.pic_mai_16_16,
+                  YAT_lawn_pic.pic_da_16_16,
+                   YAT_lawn_pic.pic_mi_16_16,
+                   new byte[]{ 
+/*--  文字:  ,  --*/
+/*--  宋体12;  此字体下对应的点阵为：宽x高=16x16   --*/
+0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x60,0x00,0x60,0x00,0x20,0x00,0xC0,0x00,},
+                    YAT_lawn_pic.pic_gua_16_16,
+                     YAT_lawn_pic.pic_mian_16_16,
+                      YAT_lawn_pic.pic_kuai_16_16,
+
+                    YAT_lawn_pic.pic_can_16_16,
+                    YAT_lawn_pic.pic_mian_16_16
+            };
+
+            String s = textBoxErrCount.Text;
+
+            try
+            {
+                printfArr(molist, int.Parse(s));
+
+            }
+            catch (Exception e1) {
+                e1.ToString();
+            };
+
+
+
+
+        }
+
+
+        private void printfArr(byte[][] molist, int start) {
+            int lp = 0;
+            for (int i = start; i < molist.Length+ start; i++)
+            {
+                int pi = i % molist.Length;
+                ZLG_GUI.GUI_PutHZ(lp, 10, molist[pi], 16, 16);
+                lp = lp + 16;
+            }
         }
     }
 }

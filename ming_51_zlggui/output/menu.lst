@@ -1,10 +1,10 @@
-C51 COMPILER V9.52.0.0   MENU                                                              01/01/2020 23:07:05 PAGE 1   
+C51 COMPILER V9.52.0.0   MENU                                                              01/09/2021 20:48:21 PAGE 1   
 
 
 C51 COMPILER V9.52.0.0, COMPILATION OF MODULE MENU
 OBJECT MODULE PLACED IN .\output\menu.obj
-COMPILER INVOKED BY: D:\Program Files\keil\C51\BIN\C51.EXE src\menu.c LARGE BROWSE INCDIR(.\head;.\src) DEBUG OBJECTEXTE
-                    -ND PRINT(.\output\menu.lst) TABS(2) OBJECT(.\output\menu.obj)
+COMPILER INVOKED BY: D:\Program Files\keil\C51\BIN\C51.EXE src\menu.c LARGE INCDIR(.\head;.\src) PRINT(.\output\menu.lst
+                    -) TABS(2) OBJECT(.\output\menu.obj)
 
 line level    source
 
@@ -62,7 +62,7 @@ line level    source
               * 出口参数：无
               ****************************************************************************/
               void  GUI_MMenuSelect(MMENU *men, uint8 no)
-C51 COMPILER V9.52.0.0   MENU                                                              01/01/2020 23:07:05 PAGE 2   
+C51 COMPILER V9.52.0.0   MENU                                                              01/09/2021 20:48:21 PAGE 2   
 
               {  WINDOWS  *mwin;
                  uint8  xx;
@@ -126,7 +126,7 @@ line level    source
                  if( (mwin->with)<50 ) return(0);
                   
                  /* 画菜子单项。下拉子菜单，以向左下拉为原则，若右边溢出则以右下拉显示 */
-C51 COMPILER V9.52.0.0   MENU                                                              01/01/2020 23:07:05 PAGE 3   
+C51 COMPILER V9.52.0.0   MENU                                                              01/09/2021 20:48:21 PAGE 3   
 
                  xx = mwin->x;
                  xx += (men->mmenu_no)*MMENU_WIDTH;
@@ -190,7 +190,7 @@ line level    source
               * 名称：GUI_SMenuSelect()
               * 功能：选择新的子菜单。
               * 入口参数：men   子菜单句柄
-C51 COMPILER V9.52.0.0   MENU                                                              01/01/2020 23:07:05 PAGE 4   
+C51 COMPILER V9.52.0.0   MENU                                                              01/09/2021 20:48:21 PAGE 4   
 
               *          old_no 原先选择的子菜单项
               *      new_no 现要选择的子菜单项
@@ -254,7 +254,7 @@ line level    source
                  xx +=  (men->mmenu_no)*MMENU_WIDTH;
                  yy = mwin->y + 22;
                  yy +=  (men->no) * 11 + 2;
-C51 COMPILER V9.52.0.0   MENU                                                              01/01/2020 23:07:05 PAGE 5   
+C51 COMPILER V9.52.0.0   MENU                                                              01/09/2021 20:48:21 PAGE 5   
 
                  if( (xx+SMENU_WIDTH) <= (mwin->x + mwin->with - 1) ) 
                  {  /* 以左下拉为原则显示子菜单 */
@@ -318,7 +318,7 @@ line level    source
               };
               
               
-C51 COMPILER V9.52.0.0   MENU                                                              01/01/2020 23:07:05 PAGE 6   
+C51 COMPILER V9.52.0.0   MENU                                                              01/09/2021 20:48:21 PAGE 6   
 
               
               /*--  调入了一幅图像：C:\WINDOWS\Desktop\Cancle.bmp  --*/
@@ -382,7 +382,7 @@ line level    source
               
               
               /****************************************************************************
-C51 COMPILER V9.52.0.0   MENU                                                              01/01/2020 23:07:05 PAGE 7   
+C51 COMPILER V9.52.0.0   MENU                                                              01/09/2021 20:48:21 PAGE 7   
 
               * 名称：GUI_Button_OK1()
               * 功能：显示49*14按钮，选择状态的"OK"。
@@ -446,7 +446,7 @@ line level    source
               #endif
  424          
  425          
-C51 COMPILER V9.52.0.0   MENU                                                              01/01/2020 23:07:05 PAGE 8   
+C51 COMPILER V9.52.0.0   MENU                                                              01/09/2021 20:48:21 PAGE 8   
 
  426          
  427          

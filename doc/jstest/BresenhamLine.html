@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Bresham画线</title>
+<style type="text/css">
+td{
+	width:10px;
+	height:10px;	
+}
+</style>
+<script type="text/javascript">
+function $Id(sId){
+	return document.getElementById(sId);
+}
+
+function $Tag(sTag,oNode){
+	oNode=oNode||document;
+	return oNode.getElementsByTagName(sTag);
+}
+
+/**-----------------------------------------------------
+*生成画布
+*@param {int}nRowCount  画布行数
+*@param {int}nColCount  画布列数
+*/
+
+function CreatePad(nRowCount,nColCount){
+	var i,j,oDivTemp;	
+	var aHtml=[
+		"<table id=table1 border=1 bordercolor=#cccccc "
+		+"align=left cellpadding=0 cellspacing=0 "
+		+"style=border-collapse:collapse;>"];
+	
+	for(i=0;i<nRowCount;i++){
+		aHtml.push("<tr>");
+		for(j=0;j<nColCount;j++){
+			aHtml.push("<td></td>");
+		}
+		aHtml.push("</tr>");
+	}
+	aHtml.push("</table>");
+	
+	oDivTemp=document.createElement("div");
+	oDivTemp.innerHTML=aHtml.join("");
+	document.body.appendChild(oDivTemp.getElementsByTagName("table")[0]);
+}
+
+function DrawPoint(oPad,nX,nY,sColor){
+	oPad=typeof oPad=="string"?$Id(oPad):oPad;
+	sColor=sColor?sColor:"#000000";	
+	oPad.rows[nY].cells[nX].style.backgroundColor=sColor;
+}
+
+function DrawLine0(oPad,nX1,nY1,nX2,nY2){	
+	var nDeltaX,nDeltaY,nStepX,nStepY;
+	var i,x,y,nSub,nDsub1,nDsub2;
+	
+	oPad=typeof(oPad)=="string"?$Id(oPad):oPad;
+	nDeltaX=Math.abs(nX1-nX2);
+	nDeltaY=Math.abs(nY1-nY2);
+	nStepX=nX2-nX1>0?1:-1;
+	nStepY=nY2-nY1>0?1:-1;	
+	x=nX1;
+	y=nY1;	
+	
+	if(nY1==nY2){//绘制水平直线
+		for(i=nX1;i<=nX2;i++){
+			DrawPoint(oPad,i,nY1);
+		}
+	}else if(nX1==nX2){//绘制垂直直线
+		for(i=nY1;i<=nY2;i++){
+			DrawPoint(oPad,nX1,i);
+		}		
+	}if(nDeltaX>=nDeltaY){//绘制X坐标差大于Y坐标差斜线
+		nSub=2*nDeltaY-nDeltaX;
+		nDsub1=2*(nDeltaY-nDeltaX);
+		nDsub2=2*nDeltaY;
+		
+		DrawPoint(oPad,x,y);
+		while(x!=nX2){;
+			if(nSub>=0){
+				nSub+=nDsub1;
+				y+=nStepY;
+			}else{
+				nSub+=nDsub2;
+			}
+			x+=nStepX;
+			DrawPoint(oPad,x,y);
+		}
+	}else{//绘制Y坐标差大于X坐标差斜线	
+		nSub=2*nDeltaX-nDeltaY;	
+		nDsub1=2*(nDeltaX-nDeltaY);
+		nDsub2=2*nDeltaX;
+		
+		DrawPoint(oPad,x,y);
+		while(y!=nY2){;
+			if(nSub>=0){
+				nSub+=nDsub1;
+				x+=nStepX;
+			}else{
+				nSub+=nDsub2;
+			}
+			y+=nStepY;
+			DrawPoint(oPad,x,y);
+		}	
+	}	
+}
+
+
+
+
+function DrawLine(oPad,x0,y0,x1,y1){	
+	oPad=typeof(oPad)=="string"?$Id(oPad):oPad;
+	let dx =Math.abs(x1-x0);
+    let sx = x0<x1 ? 1 : -1;
+    let dy = Math.abs(y1-y0);
+    let sy = y0<y1 ? 1 : -1; 
+    let err = (dx>dy ? dx : -dy)/2
+    let e2;
+   // console.log("dx="+dx,"dy="+dy);
+    while(1){
+		DrawPoint(oPad,x0,y0);
+      if (x0==x1 && y0==y1) break;
+      e2 = err;
+      if (e2 >-dx) { err -= dy; x0 += sx; }
+      if (e2 < dy) { err += dx; y0 += sy; }
+    }
+}
+
+
+
+
+
+
+
+function ClearPad(oPad){
+	oPad=typeof oPad=="string"?$Id(oPad):oPad;
+	var aTds=$Tag("td",oPad);
+	var i,nLen=aTds.length;
+	
+	for(i=0;i<nLen;i++)
+		aTds[i].style.backgroundColor="#ffffff";
+}
+
+function draw(){
+	var oPad=$Id("table1");	
+	ClearPad(oPad);
+	DrawLine(
+		oPad,
+		$Id("txtFromX").value*1,
+		$Id("txtFromY").value*1,
+		$Id("txtToX").value*1,
+		$Id("txtToY").value*1
+	);
+}
+
+window.onload=function(){
+	CreatePad(101,101);
+}
+</script>
+</head>
+<body>
+from:<input type="text" id="txtFromX" name="txtFromX" size="2"/>
+     <input type="text" id="txtFromY" name="txtFromY" size="2"/>
+to:<input type="text" id="txtToX" name="txtToX" size="2"/>
+   <input type="text" id="txtToY" name="txtToX" size="2"/>
+<input type="button" id="btnDraw" value="绘制" onclick="draw()"/>
+<br/>
+</body>
+</html>

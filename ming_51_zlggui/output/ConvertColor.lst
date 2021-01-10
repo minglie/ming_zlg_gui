@@ -1,10 +1,10 @@
-C51 COMPILER V9.52.0.0   CONVERTCOLOR                                                      01/01/2020 23:07:04 PAGE 1   
+C51 COMPILER V9.52.0.0   CONVERTCOLOR                                                      01/09/2021 20:48:20 PAGE 1   
 
 
 C51 COMPILER V9.52.0.0, COMPILATION OF MODULE CONVERTCOLOR
 OBJECT MODULE PLACED IN .\output\ConvertColor.obj
-COMPILER INVOKED BY: D:\Program Files\keil\C51\BIN\C51.EXE src\ConvertColor.c LARGE BROWSE INCDIR(.\head;.\src) DEBUG OB
-                    -JECTEXTEND PRINT(.\output\ConvertColor.lst) TABS(2) OBJECT(.\output\ConvertColor.obj)
+COMPILER INVOKED BY: D:\Program Files\keil\C51\BIN\C51.EXE src\ConvertColor.c LARGE INCDIR(.\head;.\src) PRINT(.\output\
+                    -ConvertColor.lst) TABS(2) OBJECT(.\output\ConvertColor.obj)
 
 line level    source
 
@@ -62,7 +62,7 @@ line level    source
               /****************************************************************************
               * 名称：GUI_Color2Index_555()
               * 功能：将RGB值转换15位索引值。转换后的值适用于32K色彩色液晶。
-C51 COMPILER V9.52.0.0   CONVERTCOLOR                                                      01/01/2020 23:07:04 PAGE 2   
+C51 COMPILER V9.52.0.0   CONVERTCOLOR                                                      01/09/2021 20:48:20 PAGE 2   
 
               * 入口参数：ColorRGB    RGB值，d23--d16为R值，d15--d8为G值，d7--d0为B值
               * 出口参数：返回转换值(32K色，d14--d10为R值，d9--d5为G值，d4--d0为B值)
@@ -126,7 +126,7 @@ line level    source
               * 说明：
               ****************************************************************************/
               uint32  GUI_Index2Color_444(uint16 index) 
-C51 COMPILER V9.52.0.0   CONVERTCOLOR                                                      01/01/2020 23:07:04 PAGE 3   
+C51 COMPILER V9.52.0.0   CONVERTCOLOR                                                      01/09/2021 20:48:20 PAGE 3   
 
               {  uint8  r,g,b;
               
@@ -190,7 +190,7 @@ line level    source
               * 出口参数：返回转换值(64色，RRGGBB)
               * 说明：
               ****************************************************************************/
-C51 COMPILER V9.52.0.0   CONVERTCOLOR                                                      01/01/2020 23:07:04 PAGE 4   
+C51 COMPILER V9.52.0.0   CONVERTCOLOR                                                      01/09/2021 20:48:20 PAGE 4   
 
               uint8  GUI_Color2Index_222(uint32 colorRGB)
               {  uint32  r, g, b;
@@ -254,7 +254,7 @@ line level    source
                  b = ((Index>>0)&1) * 0xff;
                  g = ((Index>>1)&1) * 0xff;
                  r = ((Index>>2)&1) * 0xff;
-C51 COMPILER V9.52.0.0   CONVERTCOLOR                                                      01/01/2020 23:07:04 PAGE 5   
+C51 COMPILER V9.52.0.0   CONVERTCOLOR                                                      01/09/2021 20:48:20 PAGE 5   
 
                  
                  return( (r<<16) + (g<<8) + (b<<0) );

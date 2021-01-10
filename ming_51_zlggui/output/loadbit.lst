@@ -1,10 +1,10 @@
-C51 COMPILER V9.52.0.0   LOADBIT                                                           01/01/2020 23:07:05 PAGE 1   
+C51 COMPILER V9.52.0.0   LOADBIT                                                           01/09/2021 20:48:21 PAGE 1   
 
 
 C51 COMPILER V9.52.0.0, COMPILATION OF MODULE LOADBIT
 OBJECT MODULE PLACED IN .\output\loadbit.obj
-COMPILER INVOKED BY: D:\Program Files\keil\C51\BIN\C51.EXE src\loadbit.c LARGE BROWSE INCDIR(.\head;.\src) DEBUG OBJECTE
-                    -XTEND PRINT(.\output\loadbit.lst) TABS(2) OBJECT(.\output\loadbit.obj)
+COMPILER INVOKED BY: D:\Program Files\keil\C51\BIN\C51.EXE src\loadbit.c LARGE INCDIR(.\head;.\src) PRINT(.\output\loadb
+                    -it.lst) TABS(2) OBJECT(.\output\loadbit.obj)
 
 line level    source
 
@@ -62,7 +62,7 @@ line level    source
               * 功能：输出单色图形数据。
               * 入口参数： x    指定显示位置，x坐标
               *           y   指定显示位置，y坐标
-C51 COMPILER V9.52.0.0   LOADBIT                                                           01/01/2020 23:07:05 PAGE 2   
+C51 COMPILER V9.52.0.0   LOADBIT                                                           01/09/2021 20:48:21 PAGE 2   
 
               *           dat   要输出显示的数据
               *           hno     要显示此行的点个数
@@ -126,7 +126,7 @@ line level    source
  114          void  GUI_PutHZ(uint32 x, uint32 y, uint8 *dat, uint8 hno, uint8 lno)
  115          {  uint8  i;
  116   1      
-C51 COMPILER V9.52.0.0   LOADBIT                                                           01/01/2020 23:07:05 PAGE 3   
+C51 COMPILER V9.52.0.0   LOADBIT                                                           01/09/2021 20:48:21 PAGE 3   
 
  117   1         for(i=0; i<lno; i++)
  118   1         {  GUI_LoadLine(x, y, dat, hno);           // 输出一行数据

@@ -1,0 +1,15 @@
+"ConvertColor.obj",
+"delay.obj",
+"font5_7.obj",
+"FONT8_8.obj",
+"FONT24_32.obj",
+"GUI_BASIC.obj",
+"GUI_StockC.obj",
+"lcmdrv.obj",
+"loadbit.obj",
+"main.obj",
+"menu.obj",
+"spline.obj",
+"windows.obj" 
+TO "GUI" 
+PRINT(".\output\GUI.m51") RAMSIZE(256) 

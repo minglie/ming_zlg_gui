@@ -1,1 +1,1 @@
-"src\lcmdrv.c" LARGE BROWSE INCDIR(.\head;.\src) DEBUG OBJECTEXTEND PRINT(.\output\lcmdrv.lst) TABS (2) OBJECT(.\output\lcmdrv.obj)
+"src\lcmdrv.c" LARGE INCDIR(.\head;.\src) PRINT(.\output\lcmdrv.lst) TABS (2) OBJECT(.\output\lcmdrv.obj)

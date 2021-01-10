@@ -1,10 +1,10 @@
-C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/01/2020 23:07:04 PAGE 1   
+C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/09/2021 20:48:20 PAGE 1   
 
 
 C51 COMPILER V9.52.0.0, COMPILATION OF MODULE GUI_BASIC
 OBJECT MODULE PLACED IN .\output\GUI_BASIC.obj
-COMPILER INVOKED BY: D:\Program Files\keil\C51\BIN\C51.EXE src\GUI_BASIC.C LARGE BROWSE INCDIR(.\head;.\src) DEBUG OBJEC
-                    -TEXTEND PRINT(.\output\GUI_BASIC.lst) TABS(2) OBJECT(.\output\GUI_BASIC.obj)
+COMPILER INVOKED BY: D:\Program Files\keil\C51\BIN\C51.EXE src\GUI_BASIC.C LARGE INCDIR(.\head;.\src) PRINT(.\output\GUI
+                    -_BASIC.lst) TABS(2) OBJECT(.\output\GUI_BASIC.obj)
 
 line level    source
 
@@ -62,7 +62,7 @@ line level    source
   52   1         {  i = y0;
   53   2            y0 = y1;
   54   2            y1 = i;
-C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/01/2020 23:07:04 PAGE 2   
+C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/09/2021 20:48:20 PAGE 2   
 
   55   2         }
   56   1         
@@ -126,7 +126,7 @@ line level    source
  114   1         dx = x1-x0;            // 求取两点之间的差值
  115   1         dy = y1-y0;
  116   1         
-C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/01/2020 23:07:04 PAGE 3   
+C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/09/2021 20:48:20 PAGE 3   
 
  117   1         /* 判断增长方向，或是否为水平线、垂直线、点 */
  118   1         if(dx>0)             // 判断x轴方向
@@ -190,7 +190,7 @@ line level    source
  176   3               {  di += dx_x2;
  177   4               }
  178   3               else
-C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/01/2020 23:07:04 PAGE 4   
+C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/09/2021 20:48:20 PAGE 4   
 
  179   3               {  di += dx_x2 - dy_x2;
  180   4                  x0 += dx_sym;
@@ -254,7 +254,7 @@ line level    source
               * 说明：操作失败原因是指定地址超出有效范围。
               ****************************************************************************/
               void  GUI_LineWith(uint32 x0, uint32 y0, uint32 x1, uint32 y1, uint8 with, TCOLOR color)
-C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/01/2020 23:07:04 PAGE 5   
+C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/09/2021 20:48:20 PAGE 5   
 
               {  int32   dx;            // 直线x轴差值变量
                  int32   dy;                // 直线y轴差值变量
@@ -318,7 +318,7 @@ line level    source
                        while(1)
                        {  y0 = wx;
                           GUI_HLine(x0, y0, x1, color);
-C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/01/2020 23:07:04 PAGE 6   
+C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/09/2021 20:48:20 PAGE 6   
 
                           if(wx>=wy) break;
                           wx++;
@@ -382,7 +382,7 @@ line level    source
                     draw_b = x0+wy;
                     GUI_HLine(draw_a, y0, draw_b, color);
                  } 
-C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/01/2020 23:07:04 PAGE 7   
+C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/09/2021 20:48:20 PAGE 7   
 
                 
               }
@@ -446,7 +446,7 @@ line level    source
  424   1         {  if(di<0)
  425   2          {  di += 4*xx + 6;        
  426   3          }
-C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/01/2020 23:07:04 PAGE 8   
+C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/09/2021 20:48:20 PAGE 8   
 
  427   2          else
  428   2          {  di += 4*(xx - yy) + 10;
@@ -510,7 +510,7 @@ line level    source
  486          *           r       圆的半径
  487          *           color 填充颜色
  488          * 出口参数：无
-C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/01/2020 23:07:04 PAGE 9   
+C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/09/2021 20:48:20 PAGE 9   
 
  489          * 说明：操作失败原因是指定地址超出有效范围。
  490          ****************************************************************************/
@@ -574,7 +574,7 @@ line level    source
  548   1         yy = r;
  549   1         while(xx<yy)
  550   1         {  if(di<0)
-C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/01/2020 23:07:04 PAGE 10  
+C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/09/2021 20:48:20 PAGE 10  
 
  551   2          {  di += 4*xx + 6;
  552   3          }
@@ -638,7 +638,7 @@ line level    source
  610   2          if(draw_x3>=0)
  611   2          {  /* 设置填充线条起始点fill_x0 */
  612   3             fill_x0 = draw_x3;
-C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/01/2020 23:07:04 PAGE 11  
+C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/09/2021 20:48:20 PAGE 11  
 
  613   3             /* 设置填充线条起始点fill_y0 */
  614   3             fill_y0 = draw_y3;
@@ -702,7 +702,7 @@ line level    source
  672          
  673          
  674          
-C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/01/2020 23:07:04 PAGE 12  
+C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/09/2021 20:48:20 PAGE 12  
 
  675          #if  GUI_EllipseX_EN==1
  676          /****************************************************************************
@@ -766,7 +766,7 @@ line level    source
  734   1         di = radius_yy2 + radius_xx - radius_xx2*radius_y ;  // 初始化决策变量 
  735   1        
  736   1         /* 计算出椭圆y轴上的两个端点坐标，作为作图起点 */
-C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/01/2020 23:07:04 PAGE 13  
+C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/09/2021 20:48:20 PAGE 13  
 
  737   1         draw_x0 = draw_x1 = draw_x2 = draw_x3 = center_x;
  738   1         draw_y0 = draw_y1 = center_y + radius_y;
@@ -830,7 +830,7 @@ line level    source
  796   2          GUI_Point(draw_x3, draw_y3, color);
  797   2         }     
  798   1      }
-C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/01/2020 23:07:04 PAGE 14  
+C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/09/2021 20:48:20 PAGE 14  
 
  799          
  800          
@@ -894,7 +894,7 @@ line level    source
  858   1        
  859   1         di = radius_yy2 + radius_xx - radius_xx2*radius_y ;  // 初始化决策变量 
  860   1        
-C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/01/2020 23:07:04 PAGE 15  
+C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/09/2021 20:48:20 PAGE 15  
 
  861   1         /* 计算出椭圆y轴上的两个端点坐标，作为作图起点 */
  862   1         draw_x0 = draw_x1 = draw_x2 = draw_x3 = center_x;
@@ -958,7 +958,7 @@ line level    source
  920   2          draw_y1--;
  921   2          draw_y2++;
  922   2          draw_y3++;  
-C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/01/2020 23:07:04 PAGE 16  
+C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/09/2021 20:48:20 PAGE 16  
 
  923   2          
  924   2          GUI_Point(draw_x0, draw_y0, color);
@@ -1022,7 +1022,7 @@ line level    source
               }
               
               
-C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/01/2020 23:07:04 PAGE 17  
+C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/09/2021 20:48:20 PAGE 17  
 
               /****************************************************************************
               * 名称：GUI_CmpPointColor()
@@ -1086,7 +1086,7 @@ line level    source
                  x1_bak = xx1 = GUI_ReadRightPoint(x0, y0, fcolor);     // 找出当前y坐标上的最右边的点
                  down_point[0].x = up_point[0].x = (xx1 + xx0)/2;
                  down_point[0].y = up_point[0].y = y0;
-C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/01/2020 23:07:04 PAGE 18  
+C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/09/2021 20:48:20 PAGE 18  
 
                  down_no = 1;
                  up_no = 1;
@@ -1150,7 +1150,7 @@ line level    source
                        {  if( GUI_CmpPointColor(i, yy+1, fcolor)==0 ) // 更新折点
                           {  y0 = i;                    
                           }
-C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/01/2020 23:07:04 PAGE 19  
+C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/09/2021 20:48:20 PAGE 19  
 
                           else
                           {  if(x0!=y0)               // 找到新的折点
@@ -1214,7 +1214,7 @@ line level    source
                           {  if(x0!=y0)               // 找到新的折点
                              {  x0 = y0;
                                 up_point[up_no].x = i;
-C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/01/2020 23:07:04 PAGE 20  
+C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/09/2021 20:48:20 PAGE 20  
 
                                 up_point[up_no].y = yy;
                                 up_no++;
@@ -1278,7 +1278,7 @@ line level    source
                  if(r==0) return;
                  
                  op_2rr = 2*r*r;                    // 计算r平方乖以2
-C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/01/2020 23:07:04 PAGE 21  
+C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/09/2021 20:48:20 PAGE 21  
 
                  
                  switch(angle)
@@ -1342,7 +1342,7 @@ line level    source
                           {  GUI_Point(draw_x, draw_y, color);    // 开始画图
                                
                              /* 计算下一点 */
-C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/01/2020 23:07:04 PAGE 22  
+C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/09/2021 20:48:20 PAGE 22  
 
                              op_x--;
                              draw_x++;
@@ -1406,7 +1406,7 @@ line level    source
                           {  GUI_Point(draw_x, draw_y, color);    // 开始画图
                                
                              /* 计算下一点 */
-C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/01/2020 23:07:04 PAGE 23  
+C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/09/2021 20:48:20 PAGE 23  
 
                              op_y++;
                              draw_y--;
@@ -1470,7 +1470,7 @@ line level    source
                  pno_angle = 0;
                  /* 先计算出在此半径下的45度的圆弧的点数 */       
                  op_x = r;
-C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/01/2020 23:07:04 PAGE 24  
+C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/09/2021 20:48:20 PAGE 24  
 
                  op_y = 0;
                  while(1)
@@ -1534,7 +1534,7 @@ line level    source
                     } 
                     
                     if(op_x<=0)
-C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/01/2020 23:07:04 PAGE 25  
+C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/09/2021 20:48:20 PAGE 25  
 
                     {  if(draw_on==1) GUI_Point(draw_x, draw_y, color);   // 开始画图
                        break;
@@ -1598,7 +1598,7 @@ line level    source
                  {  /* 计算下一点 */
                     op_y++;
                     draw_y++;
-C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/01/2020 23:07:04 PAGE 26  
+C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/09/2021 20:48:20 PAGE 26  
 
                     if( (2*op_x*op_x + 2*op_y*op_y - op_2rr - 2*op_x +1)>0 )  // 使用逐点比较法实现画圆弧
                     {  op_x--;
@@ -1662,7 +1662,7 @@ line level    source
                     {  if(draw_on==1) GUI_Point(draw_x, draw_y, color);   // 开始画图
                        break;
                     }
-C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/01/2020 23:07:04 PAGE 27  
+C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/09/2021 20:48:20 PAGE 27  
 
                  }
                  
@@ -1726,7 +1726,7 @@ line level    source
 1664   1         op_y = 0;
 1665   1         while(1)
 1666   1         {  pno_angle++;              // 画点计数         
-C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/01/2020 23:07:04 PAGE 28  
+C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/09/2021 20:48:20 PAGE 28  
 
 1667   2            /* 计算下一点 */
 1668   2            op_y++;
@@ -1790,7 +1790,7 @@ line level    source
 1726   2            
 1727   2            if(op_x<=0)
 1728   2            {  if(draw_on==1) GUI_Point(draw_x, draw_y, color);   // 开始画图
-C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/01/2020 23:07:04 PAGE 29  
+C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/09/2021 20:48:20 PAGE 29  
 
 1729   3               break;
 1730   3            }
@@ -1854,7 +1854,7 @@ line level    source
 1788   1         while(1)
 1789   1         {  /* 计算下一点 */
 1790   2            op_y++;
-C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/01/2020 23:07:04 PAGE 30  
+C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/09/2021 20:48:20 PAGE 30  
 
 1791   2            draw_y++;
 1792   2            if( (2*op_x*op_x + 2*op_y*op_y - op_2rr - 2*op_x +1)>0 )  // 使用逐点比较法实现画圆弧
@@ -1918,7 +1918,7 @@ line level    source
 1850   3               GUI_Line(x, y, draw_x, draw_y, color);
 1851   3            } 
 1852   2            
-C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/01/2020 23:07:04 PAGE 31  
+C51 COMPILER V9.52.0.0   GUI_BASIC                                                         01/09/2021 20:48:20 PAGE 31  
 
 1853   2            if(op_x>=op_y)
 1854   2            {  if(draw_on==1) GUI_Point(draw_x, draw_y, color);   // 开始画图

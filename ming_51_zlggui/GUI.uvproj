@@ -48,12 +48,12 @@
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
           <CreateHexFile>1</CreateHexFile>
-          <DebugInformation>1</DebugInformation>
-          <BrowseInformation>1</BrowseInformation>
+          <DebugInformation>0</DebugInformation>
+          <BrowseInformation>0</BrowseInformation>
           <ListingPath>.\output\</ListingPath>
           <HexFormatSelection>0</HexFormatSelection>
           <Merge32K>0</Merge32K>
-          <CreateBatchFile>1</CreateBatchFile>
+          <CreateBatchFile>0</CreateBatchFile>
           <BeforeCompile>
             <RunUserProg1>0</RunUserProg1>
             <RunUserProg2>0</RunUserProg2>
@@ -175,7 +175,7 @@
           <Target51Misc>
             <MemoryModel>2</MemoryModel>
             <RTOS>0</RTOS>
-            <RomSize>1</RomSize>
+            <RomSize>2</RomSize>
             <DataHold>0</DataHold>
             <XDataHold>0</XDataHold>
             <UseOnchipRom>0</UseOnchipRom>
@@ -351,11 +351,6 @@
         <Group>
           <GroupName>Source Group 1</GroupName>
           <Files>
-            <File>
-              <FileName>STARTUP.A51</FileName>
-              <FileType>2</FileType>
-              <FilePath>.\STARTUP.A51</FilePath>
-            </File>
             <File>
               <FileName>ConvertColor.c</FileName>
               <FileType>1</FileType>

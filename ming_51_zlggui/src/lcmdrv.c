@@ -326,7 +326,7 @@ uint8  GUI_Point(uint8 x, uint8 y, TCOLOR color)
    // 设置相应的点为1或0 
    bak = LCM_ReadByte(x,y);
    if(0==color)
-   {  bak &= (~DEC_HEX_TAB[y&0x07]);
+   {  bak &= (~DEC_HEX_TAB[y&0x07]); 
    }
    else
    {  bak |= DEC_HEX_TAB[y&0x07];

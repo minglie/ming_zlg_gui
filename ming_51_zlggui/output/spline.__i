@@ -1,1 +1,0 @@
-"src\spline.c" LARGE BROWSE INCDIR(.\head;.\src) DEBUG OBJECTEXTEND PRINT(.\output\spline.lst) TABS (2) OBJECT(.\output\spline.obj)

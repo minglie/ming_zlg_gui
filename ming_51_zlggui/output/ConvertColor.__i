@@ -1,1 +1,0 @@
-"src\ConvertColor.c" LARGE BROWSE INCDIR(.\head;.\src) DEBUG OBJECTEXTEND PRINT(.\output\ConvertColor.lst) TABS (2) OBJECT(.\output\ConvertColor.obj)

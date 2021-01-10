@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Windows.Forms;
+using Newtonsoft.Json;
+using static Ming_LCD.JsonHelper;
 
 namespace Ming_LCD
 {
@@ -13,9 +14,14 @@ namespace Ming_LCD
         [STAThread]
         static void Main()
         {
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+
+
+       
+       
         }
     }
 }

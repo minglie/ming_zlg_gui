@@ -92,3 +92,6 @@ D:\G\ming_zlg_gui\ming_cs_zlggui\Ming_LCD\obj\Debug\Ming_LCD.csproj.GenerateReso
 D:\G\ming_zlg_gui\ming_cs_zlggui\Ming_LCD\obj\Debug\Ming_LCD.csproj.CoreCompileInputs.cache
 D:\G\ming_zlg_gui\ming_cs_zlggui\Ming_LCD\obj\Debug\Ming_LCD.exe
 D:\G\ming_zlg_gui\ming_cs_zlggui\Ming_LCD\obj\Debug\Ming_LCD.pdb
+D:\G\ming_zlg_gui\ming_cs_zlggui\Ming_LCD\bin\Debug\Newtonsoft.Json.dll
+D:\G\ming_zlg_gui\ming_cs_zlggui\Ming_LCD\bin\Debug\Newtonsoft.Json.xml
+D:\G\ming_zlg_gui\ming_cs_zlggui\Ming_LCD\obj\Debug\Ming_LCD.csproj.CopyComplete

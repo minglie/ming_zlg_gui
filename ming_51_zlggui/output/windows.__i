@@ -1,1 +1,0 @@
-"src\windows.c" LARGE BROWSE INCDIR(.\head;.\src) DEBUG OBJECTEXTEND PRINT(.\output\windows.lst) TABS (2) OBJECT(.\output\windows.obj)

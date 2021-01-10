@@ -1,1 +1,0 @@
-"src\menu.c" LARGE BROWSE INCDIR(.\head;.\src) DEBUG OBJECTEXTEND PRINT(.\output\menu.lst) TABS (2) OBJECT(.\output\menu.obj)

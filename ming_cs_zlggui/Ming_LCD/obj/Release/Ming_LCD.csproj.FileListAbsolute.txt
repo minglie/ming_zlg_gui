@@ -8,3 +8,6 @@ D:\G\ming_zlg_gui\ming_cs_zlggui\Ming_LCD\obj\Release\Ming_LCD.csproj.CoreCompil
 D:\G\ming_zlg_gui\ming_cs_zlggui\Ming_LCD\obj\Release\Ming_LCD.exe
 D:\G\ming_zlg_gui\ming_cs_zlggui\Ming_LCD\obj\Release\Ming_LCD.pdb
 D:\G\ming_zlg_gui\ming_cs_zlggui\Ming_LCD\obj\Release\Ming_LCD.csprojAssemblyReference.cache
+D:\G\ming_zlg_gui\ming_cs_zlggui\Ming_LCD\bin\Release\Newtonsoft.Json.dll
+D:\G\ming_zlg_gui\ming_cs_zlggui\Ming_LCD\bin\Release\Newtonsoft.Json.xml
+D:\G\ming_zlg_gui\ming_cs_zlggui\Ming_LCD\obj\Release\Ming_LCD.csproj.CopyComplete

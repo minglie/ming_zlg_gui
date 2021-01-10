@@ -80,34 +80,31 @@ void  DemoEllipse(void)
     GUI_Ellipse(5, 50, 20, 55, 1);				
     GUI_Ellipse(55, 75, 20, 55, 1);
     GUI_EllipseFill(80,120, 25, 50, 1);
-	   delay_nms(20000);
+	   delay_nms(200);
 	   GUI_WindowsClr(&demow) ;
 }
 void main()
 {
+
+	
 	  uint8 x,y;   
     uint32 i,j;   
     GUI_Initialize();   
+	
+	
+		DemoEllipse();
+	
+	
     GUI_SetColor(1, 0);    
     GUI_HLine(0,0,127,1);   
     GUI_RLine(0,0,63,1);   
     GUI_HLine(0,63,128,1);   
     GUI_RLine(127,0,63,1);   
     GUI_PutString(1,4,"xianghui222@163.com");   
-    i=0;j=0;   
-    x=16; y=16;   
-    GUI_PutHZ(x, y, (uint8 *)HZ1, 16, 16);   
-    x += 16;   
-    GUI_PutHZ(x, y, (uint8 *)HZ2, 16, 16);   
-    x += 16;   
-    GUI_PutHZ(x, y, (uint8 *)HZ3, 16, 16);   
-    x += 16;   
-    GUI_PutHZ(x, y, (uint8 *)HZ4, 16, 16);   
-    x += 16;   
-    GUI_PutHZ(x, y, (uint8 *)HZ5, 16, 16);   
-    x += 16;   
-    GUI_PutHZ(x, y, (uint8 *)HZ6, 16, 16);   
    
+	 GUI_PutHZ(0, 0, (uint8 *)HZ4, 16, 16);   
+	
+	
     x=36; y += 16;   
     GUI_PutHZ(x, y, (uint8 *)EZ1, 8, 16);   
     x += 8;   
@@ -122,10 +119,10 @@ void main()
     GUI_PutHZ(x, y, (uint8 *)EZ6, 8, 16);   
     x=10;y+=20;   
  
-    GUI_PutString8_8(x,y,"QQ:934031452");   
+    GUI_PutString8_8(x,y,"1234031452");   
 
   
- 
+
     while(1)   
     {   
            
